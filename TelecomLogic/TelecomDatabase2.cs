@@ -9,7 +9,7 @@ namespace TelecomDB
         {
             if (optionsBuilder.IsConfigured == false)
             {
-                optionsBuilder.UseSqlServer(@"Data Source=DESKTOP-56G226H\SQLEXPRESS;Initial Catalog=TelecomDatabase2;Integrated Security=True;MultipleActiveResultSets=True;");
+                optionsBuilder.UseSqlServer(@"Data Source=DESKTOP-*******\SQLEXPRESS;Initial Catalog=TelecomDatabase2;Integrated Security=True;MultipleActiveResultSets=True;");
             }
             base.OnConfiguring(optionsBuilder);
         }
