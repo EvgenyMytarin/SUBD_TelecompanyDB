@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Unity" Version="5.11.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TelecomDatabase\TelecomLogic.csproj" />
+    <ProjectReference Include="..\TelecomLogic\TelecomDB.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="FormOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormTariffs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormTariff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+
+</Project>
